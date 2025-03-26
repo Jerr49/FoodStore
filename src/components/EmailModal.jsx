@@ -58,6 +58,7 @@ const EmailModal = ({ onClose }) => {
           onClick={onClose}
           sx={{
             backgroundColor: '#000000',
+            color: 'white',
             '&:hover': { backgroundColor: '#333333' },
             borderRadius: '12px', 
             padding: isMobile ? '8px 16px' : '10px 20px', 

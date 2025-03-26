@@ -22,12 +22,8 @@ import spag from "../assets/spag.jpg";
 import pastaMain from "../assets/pasta.jpg";
 import creamySalad from "../assets/saladcreamy.jpg";
 import burger from "../assets/burger.jpg";
-import {
-  LocalDining,
-  DeliveryDining,
-  SupportAgent,
-} from "@mui/icons-material";
-import Footer from "./Footer"; // Import the Footer component
+import { LocalDining, DeliveryDining, SupportAgent } from "@mui/icons-material";
+import Footer from "./Footer";
 
 // Fade-in animation
 const fadeIn = keyframes`
@@ -208,13 +204,19 @@ const FoodLandingPage = () => {
           py: isMobile ? 4 : 8,
           backgroundColor: "#f5f5f5",
           animation: `${fadeIn} 1s ease-in-out`,
+          color: "black",
         }}
       >
         <Container>
           <Typography
             variant={isMobile ? "h5" : "h4"}
             component="h2"
-            sx={{ textAlign: "center", fontWeight: "bold", mb: 4 }}
+            sx={{
+              textAlign: "center",
+              fontWeight: "bold",
+              mb: 4,
+              color: "black",
+            }}
           >
             Why Choose Us?
           </Typography>
@@ -223,16 +225,15 @@ const FoodLandingPage = () => {
               <Box sx={{ textAlign: "center" }}>
                 <LocalDining
                   sx={{ fontSize: "3rem", color: "#ff5722", mb: 2 }}
-                />{" "}
-                {/* Icon */}
+                />
                 <Typography
                   variant={isMobile ? "subtitle1" : "h6"}
                   component="h3"
-                  sx={{ fontWeight: "bold", mb: 2 }}
+                  sx={{ fontWeight: "bold", mb: 2, color: "black" }}
                 >
                   Fresh Ingredients
                 </Typography>
-                <Typography variant="body1">
+                <Typography variant="body1" sx={{ color: "black" }}>
                   We use only the freshest ingredients to ensure the best taste
                   and quality.
                 </Typography>
@@ -242,16 +243,15 @@ const FoodLandingPage = () => {
               <Box sx={{ textAlign: "center" }}>
                 <DeliveryDining
                   sx={{ fontSize: "3rem", color: "#ff5722", mb: 2 }}
-                />{" "}
-                {/* Icon */}
+                />
                 <Typography
                   variant={isMobile ? "subtitle1" : "h6"}
                   component="h3"
-                  sx={{ fontWeight: "bold", mb: 2 }}
+                  sx={{ fontWeight: "bold", mb: 2, color: "black" }}
                 >
                   Fast Delivery
                 </Typography>
-                <Typography variant="body1">
+                <Typography variant="body1" sx={{ color: "black" }}>
                   Get your food delivered quickly and hot, right to your
                   doorstep.
                 </Typography>
@@ -261,16 +261,15 @@ const FoodLandingPage = () => {
               <Box sx={{ textAlign: "center" }}>
                 <SupportAgent
                   sx={{ fontSize: "3rem", color: "#ff5722", mb: 2 }}
-                />{" "}
-                {/* Icon */}
+                />
                 <Typography
                   variant={isMobile ? "subtitle1" : "h6"}
                   component="h3"
-                  sx={{ fontWeight: "bold", mb: 2 }}
+                  sx={{ fontWeight: "bold", mb: 2, color: "black" }}
                 >
                   24/7 Support
                 </Typography>
-                <Typography variant="body1">
+                <Typography variant="body1" sx={{ color: "black" }}>
                   Our customer support team is always available to assist you.
                 </Typography>
               </Box>
@@ -357,38 +356,62 @@ const FoodLandingPage = () => {
           py: isMobile ? 4 : 8,
           backgroundColor: "#f5f5f5",
           animation: `${fadeIn} 1s ease-in-out`,
+          color: "black",
         }}
       >
         <Container>
           <Typography
             variant={isMobile ? "h5" : "h4"}
             component="h2"
-            sx={{ textAlign: "center", fontWeight: "bold", mb: 4 }}
+            sx={{
+              textAlign: "center",
+              fontWeight: "bold",
+              mb: 4,
+              color: "black",
+            }}
           >
             What Our Customers Say
           </Typography>
           <Grid container spacing={4}>
             <Grid item xs={12} md={4}>
-              <Typography variant="body1" sx={{ fontStyle: "italic", mb: 2 }}>
+              <Typography
+                variant="body1"
+                sx={{ fontStyle: "italic", mb: 2, color: "black" }}
+              >
                 "The food is always fresh and delicious. Highly recommended!"
               </Typography>
-              <Typography variant="body2" sx={{ fontWeight: "bold" }}>
+              <Typography
+                variant="body2"
+                sx={{ fontWeight: "bold", color: "black" }}
+              >
                 - John Doe
               </Typography>
             </Grid>
             <Grid item xs={12} md={4}>
-              <Typography variant="body1" sx={{ fontStyle: "italic", mb: 2 }}>
+              <Typography
+                variant="body1"
+                sx={{ fontStyle: "italic", mb: 2, color: "black" }}
+              >
                 "Fast delivery and great customer service. Will order again!"
               </Typography>
-              <Typography variant="body2" sx={{ fontWeight: "bold" }}>
+              <Typography
+                variant="body2"
+                sx={{ fontWeight: "bold", color: "black" }}
+              >
                 - Jane Smith
               </Typography>
             </Grid>
             <Grid item xs={12} md={4}>
-              <Typography variant="body1" sx={{ fontStyle: "italic", mb: 2 }}>
+              <Typography
+                variant="body1"
+                sx={{ fontStyle: "italic", mb: 2, color: "black" }}
+              >
                 "Amazing variety of dishes. Love the sushi!"
               </Typography>
-              <Typography variant="body2" sx={{ fontWeight: "bold" }}>
+              <Typography
+                variant="body2"
+                sx={{ fontWeight: "bold", color: "black" }}
+              >
                 - Mike Johnson
               </Typography>
             </Grid>

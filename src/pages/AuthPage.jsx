@@ -18,12 +18,12 @@ const AuthPage = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundImage: `url(${foodBackground})`, // Food-themed background
+        backgroundImage: `url(${foodBackground})`, 
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
     >
-      <Container maxWidth={isMobile ? 'xs' : 'sm'}> {/* Adjust container width for mobile */}
+      <Container maxWidth={isMobile ? 'xs' : 'sm'}> 
         {/* Slide in Login Form */}
         <Slide direction="right" in={isLogin} mountOnEnter unmountOnExit>
           <div>
